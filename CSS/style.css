@@ -1,0 +1,313 @@
+@font-face {
+    font-family: "Nico Moji";
+    src: url("/Fonts/Nico-Moji.ttf.woff");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1236px;
+    margin: 0 auto;
+}
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__logo {
+    display: flex;
+    font-family: "Nico Moji", sans-serif;
+    align-items: center;
+}
+.logo__img {
+    margin-right: 42px;
+}
+.header__list {
+    height: 100%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.header__list li {
+    margin-left: 63px;
+}
+.header__list li a {
+    text-decoration: none;
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.burger{
+    display: none;
+}
+.hero-block{
+    padding-top: 54px;
+}
+.hero-block__container{
+    display: flex;
+    justify-content: space-between;
+}
+.hero-block__box{
+    width: 705px;
+    height: 100%;
+}
+.hero-block__head{
+    color: rgb(228, 193, 0);
+    font-family: "Montserrat", sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 55px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.hero-block__text{
+    margin: 30px 0;
+    color: rgb(0, 0, 0);
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 600px;
+}
+
+.hero-block__but{
+    width: 224px;
+    height: 47px;
+    background: linear-gradient(135.00deg, rgb(226, 163, 0),rgb(226, 149, 0) 100%);
+    border-radius: 6px;
+    box-shadow: 0px 2px 13px 0px rgba(226, 158, 0, 0.48);
+    color: rgb(0, 0, 0);
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0%;
+}
+.hero-block__but:active{
+    position: relative;
+    top: 3px;
+}
+.section-title{
+    color: rgb(2, 55, 111);
+    font-family: "Montserrat", sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 51px;
+}
+
+.team-info{
+    padding: 75px 0 100px 0;
+}
+.progress__bg{
+    width: 356px;
+    height: 10px;
+    background-color: #2C2C2C;
+    margin-bottom: 35px;
+}
+
+.progress__fg1{
+    margin-top: 15px;
+    width: 70%;
+    height: 100%;
+    background-color: #00C4F0;
+}
+.progress__fg2{
+    margin-top: 15px;
+    width: 85%;
+    height: 100%;
+    background-color: #00C4F0;
+}
+.progress__fg3{
+    margin-top: 15px;
+    width: 95%;
+    height: 100%;
+    background-color: #00C4F0;
+}
+
+h4{
+    color: rgb(2, 55, 111);
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0%;
+}
+.team-info__h{
+    margin-bottom: 72px;
+}
+.team-info__list{
+    list-style: none;
+}
+.team-info__cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.team-info__img{
+    height: 575px;
+    width: 632px;
+    filter: drop-shadow(0px 0px 152px rgba(0, 196, 240, 0.42));
+}
+.demo-video{
+    padding: 69px 0;
+}
+.demo-video__video-item{
+    width: 100%;
+    height: 700px;
+    border: 48px solid #2D2D2D;
+    border-radius: 29px;
+}
+.illustration__img{
+    width: 100%;
+    height: 100%;
+}
+.illustration__list{
+    list-style: none;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.illustration-container{
+    margin: 0 auto;
+    width: 100%;
+}
+.illustration{
+    padding: 70px 0;
+}
+.footer__container{
+    color: #02376F;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer__left-side{
+    font-family: "Nico Moji", sans-serif;
+}
+.footer__left-side p{
+    font-family: "Montserrat", sans-serif;
+}
+.footer__left-side p span{
+    font-family: "Nico Moji", sans-serif;
+}
+.footer__right-side{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+footer{
+    width: 100%;
+    height: 176px;
+}
+@media screen and (max-width: 1024px) {
+    .container{
+        max-width: 900px;
+    }
+    nav{
+        display: none;
+    }
+    .burger{
+        display: block;
+    
+    }
+    .hero-block__img{
+        width: 300px;
+        height: 450px;
+    }
+    .hero-block__box{
+        width: 331px;
+    }
+    .hero-block__head{
+        font-size: 40px;
+    }
+    .hero-block__text{
+        font-size: 18px;
+        width: 331px;
+    }
+    .team-info__img{
+        order: -1;
+        height: 450px;
+        width: 500px;
+    }
+    .team-info__cont{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .demo-video__video-item{
+        height: 600px;
+    }
+}
+@media screen and (max-width: 660px) {
+    .container{
+        max-width: 600px;
+    }
+    nav{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    .hero-block__container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-block__img{
+        width: 200px;
+        height: 300px;
+    }
+    .hero-block__box{
+        width: 250px;
+    }
+    .hero-block__head{
+        font-size: 36px;
+    }
+    .hero-block__text{
+        font-size: 18px;
+        width: 250px;
+    }
+    .section-title{
+        font-size: 36px;
+    }
+    .team-info__list h4{
+        font-size: 25px;
+    }
+    .team-info__img{
+        order: -1;
+        height: 275px;
+        width: 310px;
+    }
+    .team-info__cont{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .demo-video__video-item{
+        height: 350px;
+    }
+    .illustration__list{
+        list-style: none;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr;
+    }
+    .footer__container{
+        align-items: center;
+        flex-direction: column;
+    }
+    footer{
+        width: 100%;
+        height: 176px;
+    }
+}
